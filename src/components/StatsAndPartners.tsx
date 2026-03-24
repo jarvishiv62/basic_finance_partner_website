@@ -12,7 +12,7 @@ export default function StatsAndPartners() {
   const banks = [
     { name: "IDFC FIRST Bank", logo: "/bank/idfc.webp" },
     { name: "Kotak", logo: "/bank/kotak.webp" },
-    { name: "L&T Finance", logo: "/bank/ltfinance.webp" },
+    { name: "L&T Finance", logo: "/bank/lt.webp" },
     { name: "Axis Bank", logo: "/bank/axis.webp" },
     { name: "Bajaj Finserv", logo: "/bank/bajaj.webp" },
     { name: "Bandhan Bank", logo: "/bank/bandhan.webp" },

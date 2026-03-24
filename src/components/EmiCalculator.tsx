@@ -80,7 +80,7 @@ export default function EmiCalculator() {
                   step="50000"
                   value={loanAmount}
                   onChange={(e) => setLoanAmount(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:bg-green-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb:hover]:bg-green-600 [&::-webkit-slider-thumb:hover]:scale-110 [&::-moz-range-thumb]:w-5 [&::-moz-range-thumb]:h-5 [&::-moz-range-thumb]:bg-green-500 [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:shadow-lg [&::-moz-range-thumb]:border-none [&::-moz-range-thumb:hover]:bg-green-600 [&::-moz-range-thumb:hover]:scale-110"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>₹1L</span>
@@ -105,7 +105,7 @@ export default function EmiCalculator() {
                   step="0.1"
                   value={interestRate}
                   onChange={(e) => setInterestRate(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:bg-green-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb:hover]:bg-green-600 [&::-webkit-slider-thumb:hover]:scale-110 [&::-moz-range-thumb]:w-5 [&::-moz-range-thumb]:h-5 [&::-moz-range-thumb]:bg-green-500 [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:shadow-lg [&::-moz-range-thumb]:border-none [&::-moz-range-thumb:hover]:bg-green-600 [&::-moz-range-thumb:hover]:scale-110"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>5%</span>
@@ -130,7 +130,7 @@ export default function EmiCalculator() {
                   step="6"
                   value={loanTenure}
                   onChange={(e) => setLoanTenure(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider"
+                  className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-5 [&::-webkit-slider-thumb]:h-5 [&::-webkit-slider-thumb]:bg-green-500 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:shadow-lg [&::-webkit-slider-thumb:hover]:bg-green-600 [&::-webkit-slider-thumb:hover]:scale-110 [&::-moz-range-thumb]:w-5 [&::-moz-range-thumb]:h-5 [&::-moz-range-thumb]:bg-green-500 [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:shadow-lg [&::-moz-range-thumb]:border-none [&::-moz-range-thumb:hover]:bg-green-600 [&::-moz-range-thumb:hover]:scale-110"
                 />
                 <div className="flex justify-between text-xs text-gray-500 mt-1">
                   <span>6 months</span>
@@ -213,38 +213,6 @@ export default function EmiCalculator() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .slider::-webkit-slider-thumb {
-          appearance: none;
-          width: 20px;
-          height: 20px;
-          background: #10b981;
-          cursor: pointer;
-          border-radius: 50%;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .slider::-moz-range-thumb {
-          width: 20px;
-          height: 20px;
-          background: #10b981;
-          cursor: pointer;
-          border-radius: 50%;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          border: none;
-        }
-
-        .slider::-webkit-slider-thumb:hover {
-          background: #059669;
-          transform: scale(1.1);
-        }
-
-        .slider::-moz-range-thumb:hover {
-          background: #059669;
-          transform: scale(1.1);
-        }
-      `}</style>
     </section>
   );
 }
