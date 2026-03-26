@@ -42,34 +42,34 @@ export default function EmiCalculator() {
   };
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-12 sm:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             EMI Calculator
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
             Calculate your monthly EMI instantly with our easy-to-use
             calculator. Plan your finances better.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
           {/* Calculator Form */}
-          <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 shadow-lg">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-6">
+          <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
               Loan Details
             </h3>
 
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {/* Loan Amount */}
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-sm font-medium text-gray-700">
+                  <label className="text-xs sm:text-sm font-medium text-gray-700">
                     Loan Amount
                   </label>
-                  <span className="text-lg font-semibold text-green-600">
+                  <span className="text-base sm:text-lg font-semibold text-green-600">
                     {formatCurrency(loanAmount)}
                   </span>
                 </div>
@@ -91,10 +91,10 @@ export default function EmiCalculator() {
               {/* Interest Rate */}
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-sm font-medium text-gray-700">
+                  <label className="text-xs sm:text-sm font-medium text-gray-700">
                     Interest Rate
                   </label>
-                  <span className="text-lg font-semibold text-green-600">
+                  <span className="text-base sm:text-lg font-semibold text-green-600">
                     {interestRate.toFixed(1)}%
                   </span>
                 </div>
@@ -116,10 +116,10 @@ export default function EmiCalculator() {
               {/* Loan Tenure */}
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-sm font-medium text-gray-700">
+                  <label className="text-xs sm:text-sm font-medium text-gray-700">
                     Loan Tenure
                   </label>
-                  <span className="text-lg font-semibold text-green-600">
+                  <span className="text-base sm:text-lg font-semibold text-green-600">
                     {loanTenure} months ({Math.floor(loanTenure / 12)} years)
                   </span>
                 </div>
@@ -141,24 +141,26 @@ export default function EmiCalculator() {
           </div>
 
           {/* Results */}
-          <div className="bg-gray-50 rounded-2xl p-8 shadow-lg">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
               EMI Breakdown
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {/* Monthly EMI */}
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 border border-gray-200">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm text-gray-600 mb-1">Monthly EMI</p>
-                    <p className="text-2xl md:text-3xl font-bold text-green-600">
+                    <p className="text-xs sm:text-sm text-gray-600 mb-1">
+                      Monthly EMI
+                    </p>
+                    <p className="text-xl sm:text-2xl md:text-3xl font-bold text-green-600">
                       {formatCurrency(emi)}
                     </p>
                   </div>
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-green-600"
+                      className="w-5 h-5 sm:w-6 sm:h-6 text-green-600"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
@@ -169,11 +171,13 @@ export default function EmiCalculator() {
               </div>
 
               {/* Total Interest */}
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 border border-gray-200">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm text-gray-600 mb-1">Total Interest</p>
-                    <p className="text-xl md:text-2xl font-semibold text-orange-600">
+                    <p className="text-xs sm:text-sm text-gray-600 mb-1">
+                      Total Interest
+                    </p>
+                    <p className="text-lg sm:text-xl md:text-2xl font-semibold text-orange-600">
                       {formatCurrency(totalInterest)}
                     </p>
                   </div>
@@ -190,11 +194,13 @@ export default function EmiCalculator() {
               </div>
 
               {/* Total Amount */}
-              <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 border border-gray-200">
                 <div className="flex justify-between items-center">
                   <div>
-                    <p className="text-sm text-gray-600 mb-1">Total Payment</p>
-                    <p className="text-xl md:text-2xl font-semibold text-blue-600">
+                    <p className="text-xs sm:text-sm text-gray-600 mb-1">
+                      Total Payment
+                    </p>
+                    <p className="text-lg sm:text-xl md:text-2xl font-semibold text-blue-600">
                       {formatCurrency(totalAmount)}
                     </p>
                   </div>

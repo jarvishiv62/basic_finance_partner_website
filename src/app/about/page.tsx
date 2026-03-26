@@ -7,111 +7,21 @@ export default function AboutPage() {
       <Header />
 
       {/* About Hero Section */}
-      <section className="py-16 pt-30 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="py-12 sm:py-16 pt-20 sm:pt-30 bg-gradient-to-br from-blue-50 to-green-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              About <span className="text-green-600">Ornexa</span>
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+              About <span className="text-green-600">Upay Bharat</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Empowering rural and semi-urban communities with accessible
               financial services and inclusive growth across India.
             </p>
           </div>
 
-          {/* About Content Card */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
-            <div className="space-y-8">
-              {/* Financial Services */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-green-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Comprehensive Financial Services
-                  </h3>
-                  <p className="text-gray-600">
-                    Ornexa provides Credit Cards, Personal Loans, Business
-                    Loans, Home Loans, Micro Loans, Demat Accounts, Saving
-                    Accounts and financial inclusion programs.
-                  </p>
-                </div>
-              </div>
-
-              {/* Community Support */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-blue-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Community Empowerment
-                  </h3>
-                  <p className="text-gray-600">
-                    We actively support women entrepreneurs, farmers, and small
-                    business owners by offering accessible financial solutions
-                    and livelihood development initiatives.
-                  </p>
-                </div>
-              </div>
-
-              {/* Vision */}
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 text-purple-600"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Our Vision
-                  </h3>
-                  <p className="text-gray-600">
-                    Our belief: "Strong villages build a strong nation."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Stats Cards */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+          <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
               <div className="text-green-500 text-4xl mb-4">
                 <svg
                   className="w-8 h-8 mx-auto"
@@ -127,10 +37,12 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">10K+</h3>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                10K+
+              </div>
               <p className="text-gray-600">Customers Served</p>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
               <div className="text-blue-500 text-4xl mb-4">
                 <svg
                   className="w-8 h-8 mx-auto"
@@ -146,10 +58,12 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">500+</h3>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                500+
+              </div>
               <p className="text-gray-600">Villages Connected</p>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+            <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg text-center transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
               <div className="text-purple-500 text-4xl mb-4">
                 <svg
                   className="w-8 h-8 mx-auto"
@@ -165,7 +79,9 @@ export default function AboutPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-3xl font-bold text-gray-900 mb-2">24/7</h3>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+                24/7
+              </div>
               <p className="text-gray-600">Support Available</p>
             </div>
           </div>
@@ -173,8 +89,8 @@ export default function AboutPage() {
           {/* Mission & Vision Cards */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-full flex items-center justify-center mr-3 sm:mr-4">
                   <svg
                     className="w-6 h-6 text-green-600"
                     fill="none"
@@ -189,9 +105,11 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Mission</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                  Mission
+                </h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                 To democratize financial access across rural and semi-urban
                 India by leveraging technology to create inclusive, transparent,
                 and user-friendly financial solutions that empower communities
@@ -199,7 +117,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
-              <div className="flex items-center mb-6">
+              <div className="flex items-center mb-4 sm:mb-6">
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                   <svg
                     className="w-6 h-6 text-blue-600"
@@ -221,9 +139,11 @@ export default function AboutPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Vision</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                  Vision
+                </h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                 To become India's most trusted financial platform, bridging the
                 gap between traditional banking and digital innovation, ensuring
                 every individual and business has access to the financial tools
@@ -233,18 +153,18 @@ export default function AboutPage() {
           </div>
 
           {/* Why Choose Us Section */}
-          <div className="mt-20 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <div className="mt-16 sm:mt-20 text-center">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Why <span className="text-green-600">Choose Us?</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+            <p className="text-base sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8 sm:mb-12">
               We combine innovation, transparency, and community support to
               deliver reliable financial services across India.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {/* Card 1: Trusted & Transparent */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div className="text-green-500 mb-4 flex justify-center">
                   <svg
                     className="w-12 h-12"
@@ -269,7 +189,7 @@ export default function AboutPage() {
               </div>
 
               {/* Card 2: Fast Approvals */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div className="text-blue-500 mb-4 flex justify-center">
                   <svg
                     className="w-12 h-12"
@@ -294,7 +214,7 @@ export default function AboutPage() {
               </div>
 
               {/* Card 3: Community Focused */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div className="text-purple-500 mb-4 flex justify-center">
                   <svg
                     className="w-12 h-12"
@@ -319,7 +239,7 @@ export default function AboutPage() {
               </div>
 
               {/* Card 4: Pan India Reach */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div className="text-blue-500 mb-4 flex justify-center">
                   <svg
                     className="w-12 h-12"
@@ -344,7 +264,7 @@ export default function AboutPage() {
               </div>
 
               {/* Card 5: Wide Product Range */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div className="text-green-500 mb-4 flex justify-center">
                   <svg
                     className="w-12 h-12"
@@ -369,7 +289,7 @@ export default function AboutPage() {
               </div>
 
               {/* Card 6: Strong Partnerships */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
                 <div className="text-red-500 mb-4 flex justify-center">
                   <svg
                     className="w-12 h-12"
